@@ -4,14 +4,14 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  productGUID: eb61f98160f3e22408a0cdd357b4e682
+  productGUID: fc788dc1efba8c54f87d0b8430a0ff89
   AndroidProfiler: 0
   defaultScreenOrientation: 4
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: IDMR
+  productName: DZC20 ID Game
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21176471, a: 1}
@@ -376,14 +376,14 @@ PlayerSettings:
   additionalIl2CppArgs: 
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: IDMR
+  metroPackageName: DZC20 ID Game
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: IDMR
+  metroApplicationDescription: DZC20 ID Game
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 
@@ -450,8 +450,9 @@ PlayerSettings:
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
-  cloudProjectId: 164e53b1-2a11-4c0c-b545-576f3fe041ea
-  projectName: IDMR
+  cloudServicesEnabled:
+    UNet: 1
+  cloudProjectId: 3fdb4bd8-11a9-449d-b384-b84a9e8c97ef
+  projectName: DZC20 ID Game
   organizationId: vcg_leo
   cloudEnabled: 0
