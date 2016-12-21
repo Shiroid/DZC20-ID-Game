@@ -9,18 +9,19 @@ public class MarkTranslator : MonoBehaviour
     public float mapWidth;
     public float mapHeight;
 
-    public float worldWidth;
-    public float worldHeight;
-
     public GameObject worldMarker;
-	
-	// Update is called once per frame
-	void LateUpdate () {
+    public GameObject worldWrapper;
+
+    // Update is called once per frame
+    void LateUpdate () {
         //Take in-world position
-        Vector3 newPos = worldMarker.transform.localPosition;
+        Vector3 newPos = worldMarker.transform.position;
         //Convert to position on unit square
-        newPos.x /= worldWidth;
-        newPos.y /= worldHeight;
+        newPos.x -= worldWrapper.GetComponent<WorldWrapScript>().worldCenterX;
+        newPos.y -= worldWrapper.GetComponent<WorldWrapScript>().worldCenterY;
+        newPos.x /= worldWrapper.GetComponent<WorldWrapScript>().worldWidth;
+        newPos.y /= worldWrapper.GetComponent<WorldWrapScript>().worldHeight;
+        //Fill in z
         newPos.z = 0;
         //Convert to map coordinates
         newPos.x *= mapWidth;

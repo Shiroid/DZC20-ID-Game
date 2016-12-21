@@ -27,4 +27,19 @@ public class MenuPositioner : MonoBehaviour {
             else transform.Rotate(new Vector3(Mathf.Min(turnSpeed * Time.deltaTime, Mathf.Abs(desiredRot - currentRot)), 0, 0));
         }
     }
+
+    public void showDialog()
+    {
+        currentMenu = 2;
+    }
+
+    public void showPause()
+    {
+        currentMenu = 1;
+    }
+
+    public void showMap()
+    {
+        currentMenu = 0;
+    }
 }
