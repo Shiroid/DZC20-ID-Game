@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour {
 	private bool grounded = false;
 	private Animator anim;
 	private Rigidbody2D rb2d;
+    private float prevFallspeed;
 
 
 	// Use this for initialization
@@ -24,14 +25,18 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () 
-	{
-		grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
+	void Update ()
+    {
+        float fallspeed = GetComponent<Rigidbody2D>().velocity.y;
+        grounded = fallspeed == 0 && prevFallspeed == 0;
+        prevFallspeed = fallspeed;
+        //grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 
 		if (Input.GetButtonDown("Jump") && grounded)
 		{
 			jump = true;
 		}
+
 	}
 
 	void FixedUpdate()

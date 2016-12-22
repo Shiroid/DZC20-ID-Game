@@ -21,13 +21,15 @@ public class WorldWrapScript : MonoBehaviour {
         {
             if (wrapHorizontal)
             {
-                if (wrapees[i].transform.position.x > worldCenterX + 0.5f * worldWidth) wrapees[i].transform.Translate(new Vector3(-worldWidth, 0, 0));
-                if (wrapees[i].transform.position.x < worldCenterX - 0.5f * worldWidth) wrapees[i].transform.Translate(new Vector3(worldWidth, 0, 0));
+                float flip = Mathf.Sign(wrapees[i].transform.lossyScale.x);
+                if (wrapees[i].transform.position.x > worldCenterX + 0.5f * worldWidth) wrapees[i].transform.Translate(new Vector3(-worldWidth* flip, 0, 0));
+                if (wrapees[i].transform.position.x < worldCenterX - 0.5f * worldWidth) wrapees[i].transform.Translate(new Vector3(worldWidth* flip, 0, 0));
             }
             if (wrapVertical)
             {
-                if (wrapees[i].transform.position.y > worldCenterY + 0.5f * worldHeight) wrapees[i].transform.Translate(new Vector3(0,-worldHeight, 0));
-                if (wrapees[i].transform.position.y < worldCenterY - 0.5f * worldHeight) wrapees[i].transform.Translate(new Vector3(0,worldHeight, 0));
+                float flip = Mathf.Sign(wrapees[i].transform.lossyScale.y);
+                if (wrapees[i].transform.position.y > worldCenterY + 0.5f * worldHeight) wrapees[i].transform.Translate(new Vector3(0,-worldHeight* flip, 0));
+                if (wrapees[i].transform.position.y < worldCenterY - 0.5f * worldHeight) wrapees[i].transform.Translate(new Vector3(0,worldHeight* flip, 0));
             }
         }
 	}
