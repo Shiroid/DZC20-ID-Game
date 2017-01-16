@@ -8,14 +8,29 @@ public class SceneSwapper : MonoBehaviour {
     public GameObject exitingPlayer;
     public GameObject camera;
 
-    void OnTriggerStay2D(Collider2D other)
+    private bool canInteract;
+
+    void Start()
     {
-        //Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
-        if (other.gameObject.Equals(enteringPlayer))
+        canInteract = false;
+    }
+
+    void Update()
+    {
+        if (canInteract && Input.GetKey("space"))
         {
             enteringPlayer.SetActive(false);
             exitingPlayer.SetActive(true);
             camera.GetComponent<CameraController>().player = exitingPlayer;
+        }
+        canInteract = false;
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    { 
+        if (other.gameObject.Equals(enteringPlayer))
+        {
+            canInteract = true;
         }
     }
 }
