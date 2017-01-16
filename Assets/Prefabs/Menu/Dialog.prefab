@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 23686577058474884}
   - component: {fileID: 102680408076262568}
   - component: {fileID: 114960921064977408}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Dialog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,4 +105,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 738fb2c81d157454f845390d4bfa1daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numlines: 4
+  numLines: 0
+  numCharsInLine: 0

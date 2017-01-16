@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33929329749542550}
   - component: {fileID: 23257507227644352}
   - component: {fileID: 114471461888223502}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Map Marker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,6 +93,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mapWidth: 0
   mapHeight: 0
-  worldWidth: 0
-  worldHeight: 0
   worldMarker: {fileID: 0}
+  worldWrapper: {fileID: 0}
