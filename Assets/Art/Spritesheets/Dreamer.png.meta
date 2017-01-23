@@ -1,9 +1,24 @@
 fileFormatVersion: 2
 guid: f148653f97e884e48933b7c2a9b8e83d
-timeCreated: 1485185040
+timeCreated: 1485213330
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: DreamerHair
+    21300002: DreamerHead
+    21300004: DreamerBody
+    21300006: DreamerArm
+    21300008: DreamerHand
+    21300010: DreamerLeg
+    21300012: DreamerSock
+    21300014: DreamerFoot
+    21300016: DreamerSack
+    21300018: DreamerHoodie
+    21300020: DreamerNeck
+    21300022: DreamerEye
+    21300024: DreamerLens
+    21300026: DreamerEyebrow
+    21300028: DreamerMouth
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -27,20 +42,20 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1500
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -58,9 +73,212 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DreamerHair
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 3366
+        width: 1010
+        height: 776
+      alignment: 9
+      pivot: {x: 0.5286348, y: 0.35665515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DreamerHead
+      rect:
+        serializedVersion: 2
+        x: 2906
+        y: 3241
+        width: 994
+        height: 883
+      alignment: 9
+      pivot: {x: 0.5024714, y: 0.07433432}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DreamerBody
+      rect:
+        serializedVersion: 2
+        x: 2924
+        y: 1972
+        width: 812
+        height: 1101
+      alignment: 9
+      pivot: {x: 0.48063803, y: 0.20012303}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DreamerArm
+      rect:
+        serializedVersion: 2
+        x: 2358
+        y: 2426
+        width: 229
+        height: 698
+      alignment: 9
+      pivot: {x: 0.4785444, y: 0.8871458}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DreamerHand
+      rect:
+        serializedVersion: 2
+        x: 2417
+        y: 2043
+        width: 214
+        height: 228
+      alignment: 9
+      pivot: {x: 0.4311227, y: 0.7585899}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DreamerLeg
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 1375
+        width: 255
+        height: 523
+      alignment: 9
+      pivot: {x: 0.48073205, y: 0.9274419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DreamerSock
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 1379
+        width: 89
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5276016, y: 0.71465415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DreamerFoot
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 1412
+        width: 257
+        height: 93
+      alignment: 9
+      pivot: {x: 0.3470587, y: 0.6320735}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DreamerSack
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 2165
+        width: 265
+        height: 306
+      alignment: 9
+      pivot: {x: 0.6761346, y: 0.4999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DreamerHoodie
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 2916
+        width: 547
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DreamerNeck
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 3055
+        width: 163
+        height: 160
+      alignment: 9
+      pivot: {x: 0.40957212, y: 0.34645995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DreamerEye
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 2523
+        width: 116
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DreamerLens
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 2196
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DreamerEyebrow
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 3800
+        width: 74
+        height: 28
+      alignment: 9
+      pivot: {x: 0.3931126, y: 0.61299354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DreamerMouth
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 3349
+        width: 116
+        height: 35
+      alignment: 9
+      pivot: {x: 0.4753776, y: 0.3367885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

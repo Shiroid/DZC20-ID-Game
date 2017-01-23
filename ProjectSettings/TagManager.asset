@@ -76,3 +76,6 @@ TagManager:
   - name: ShadyNPC
     uniqueID: 2706926739
     locked: 0
+  - name: Dreamer
+    uniqueID: 286349521
+    locked: 0
