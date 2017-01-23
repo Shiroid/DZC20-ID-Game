@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: 4ce7168faa5bbf94ba032f94901617d4
+timeCreated: 1485192323
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ShadyTail
+    21300002: ShadyRArm
+    21300004: ShadySuitcase
+    21300006: ShadyBody
+    21300008: ShadyHead
+    21300010: ShadyHair
+    21300012: ShadyEyeUnder
+    21300014: ShadyEyeUp
+    21300016: Shady NPC_0
+    21300018: ShadyLens
+    21300020: ShadyIris
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1500
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShadyTail
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 231
+        width: 885
+        height: 700
+      alignment: 9
+      pivot: {x: 0.6897791, y: 0.41773674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ShadyRArm
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 240
+        width: 261
+        height: 679
+      alignment: 9
+      pivot: {x: 0.5, y: 0.88870126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ShadySuitcase
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 289
+        width: 928
+        height: 590
+      alignment: 9
+      pivot: {x: 0.50000024, y: 0.86600196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ShadyBody
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1121
+        width: 712
+        height: 1401
+      alignment: 9
+      pivot: {x: 0.50000036, y: 0.21570887}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ShadyHead
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 2237
+        width: 914
+        height: 1519
+      alignment: 9
+      pivot: {x: 0.56300294, y: 0.21883872}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ShadyHair
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 2662
+        width: 1101
+        height: 1476
+      alignment: 9
+      pivot: {x: 0.53050935, y: 0.57802755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ShadyEyeUnder
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 264
+        width: 529
+        height: 849
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ShadyEyeUp
+      rect:
+        serializedVersion: 2
+        x: 3465
+        y: 269
+        width: 519
+        height: 798
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shady NPC_0
+      rect:
+        serializedVersion: 2
+        x: 3665
+        y: 1284
+        width: 279
+        height: 557
+      alignment: 9
+      pivot: {x: 0.20760703, y: 0.35354084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ShadyLens
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1325
+        width: 170
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ShadyIris
+      rect:
+        serializedVersion: 2
+        x: 3137
+        y: 1387
+        width: 87
+        height: 182
+      alignment: 9
+      pivot: {x: 0.5551618, y: 0.47363415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

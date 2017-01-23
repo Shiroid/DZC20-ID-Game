@@ -67,3 +67,6 @@ TagManager:
   - name: UI
     uniqueID: 149272721
     locked: 0
+  - name: GreenNPC
+    uniqueID: 2551455375
+    locked: 0

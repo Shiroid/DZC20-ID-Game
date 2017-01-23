@@ -1,0 +1,244 @@
+fileFormatVersion: 2
+guid: bd539556bcf8a5d4ea6938e0f7c4e0dd
+timeCreated: 1485192350
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GreenTail
+    21300002: GreenRArm
+    21300004: GreenLArm
+    21300006: GreenBody
+    21300008: GreenHead
+    21300010: GreenHair
+    21300012: GreenEyeBelow
+    21300014: GreenEyeTop
+    21300016: GreenLens
+    21300018: GreenIris
+    21300020: GreenUpperEyeLid
+    21300022: GreenLowerEyeLid
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1500
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GreenTail
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 281
+        width: 893
+        height: 706
+      alignment: 9
+      pivot: {x: 0.6773314, y: 0.36405942}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GreenRArm
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 224
+        width: 278
+        height: 830
+      alignment: 9
+      pivot: {x: 0.3791697, y: 0.8873647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GreenLArm
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 320
+        width: 662
+        height: 580
+      alignment: 9
+      pivot: {x: 0.15205848, y: 0.50827354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GreenBody
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 1255
+        width: 696
+        height: 1421
+      alignment: 9
+      pivot: {x: 0.4862106, y: 0.24334918}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GreenHead
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 2522
+        width: 975
+        height: 1541
+      alignment: 9
+      pivot: {x: 0.67972934, y: 0.18357284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GreenHair
+      rect:
+        serializedVersion: 2
+        x: 3146
+        y: 1299
+        width: 917
+        height: 700
+      alignment: 9
+      pivot: {x: 0.204609, y: 0.45416155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GreenEyeBelow
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 224
+        width: 543
+        height: 854
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GreenEyeTop
+      rect:
+        serializedVersion: 2
+        x: 3511
+        y: 233
+        width: 542
+        height: 806
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GreenLens
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 3021
+        width: 182
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GreenIris
+      rect:
+        serializedVersion: 2
+        x: 2758
+        y: 2914
+        width: 84
+        height: 179
+      alignment: 9
+      pivot: {x: 0.5363334, y: 0.26699027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GreenUpperEyeLid
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 3730
+        width: 443
+        height: 309
+      alignment: 9
+      pivot: {x: 0.08723398, y: 0.31507334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GreenLowerEyeLid
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 3529
+        width: 356
+        height: 510
+      alignment: 9
+      pivot: {x: 0.30738607, y: 0.2983212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
