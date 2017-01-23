@@ -70,3 +70,9 @@ TagManager:
   - name: GreenNPC
     uniqueID: 2551455375
     locked: 0
+  - name: RedNPC
+    uniqueID: 1159745751
+    locked: 0
+  - name: ShadyNPC
+    uniqueID: 2706926739
+    locked: 0
