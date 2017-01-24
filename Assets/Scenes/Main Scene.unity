@@ -565,6 +565,7 @@ GameObject:
   - component: {fileID: 137195898}
   - component: {fileID: 137195897}
   - component: {fileID: 137195896}
+  - component: {fileID: 137195899}
   m_Layer: 0
   m_Name: Shady NPC
   m_TagString: Untagged
@@ -620,6 +621,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &137195899
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 137195895}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e18a55f5dbeeeeb45afa67c924fd1928, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &157763916
 GameObject:
   m_ObjectHideFlags: 0
@@ -4819,6 +4837,7 @@ GameObject:
   - component: {fileID: 1686422110}
   - component: {fileID: 1686422109}
   - component: {fileID: 1686422108}
+  - component: {fileID: 1686422111}
   m_Layer: 0
   m_Name: Red NPC
   m_TagString: Untagged
@@ -4874,6 +4893,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1686422111
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1686422107}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8fc1d82451e823441a6fe0b3c14e8b4d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1690391926
 GameObject:
   m_ObjectHideFlags: 0
@@ -5249,6 +5285,7 @@ GameObject:
   - component: {fileID: 1746685256}
   - component: {fileID: 1746685255}
   - component: {fileID: 1746685254}
+  - component: {fileID: 1746685257}
   m_Layer: 0
   m_Name: Green NPC
   m_TagString: Untagged
@@ -5304,6 +5341,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1746685257
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1746685253}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2bb2bcf2d669be3459884d10820852e7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1752014674
 GameObject:
   m_ObjectHideFlags: 0
