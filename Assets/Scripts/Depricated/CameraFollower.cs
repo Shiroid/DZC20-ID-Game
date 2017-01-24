@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class CameraFollower : MonoBehaviour {
 
-    public GameObject camera;
+    public GameObject mainCamera;
 
     private Vector3 offset;
 
 	// Use this for initialization
 	void Start () {
-        offset = transform.position - camera.transform.position;
+        offset = transform.position - mainCamera.transform.position;
 	}
 	
 	// Late update is called once per frame
 	void LateUpdate () {
-        transform.position = camera.transform.position + offset;
+        transform.position = mainCamera.transform.position + offset;
 	}
 }

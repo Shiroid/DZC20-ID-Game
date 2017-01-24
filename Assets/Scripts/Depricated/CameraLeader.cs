@@ -5,11 +5,11 @@ using UnityEngine;
 public class CameraLeader : MonoBehaviour
 {
 
-    public GameObject camera;
+    public GameObject mainCamera;
 
     // Late update is called once per frame
     void LateUpdate()
     {
-        camera.transform.position = new Vector3(transform.position.x, transform.position.y, camera.transform.position.z);
+        mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y, mainCamera.transform.position.z);
     }
 }

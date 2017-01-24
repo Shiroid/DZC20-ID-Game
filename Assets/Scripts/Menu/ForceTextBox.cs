@@ -9,6 +9,26 @@ public class ForceTextBox : MonoBehaviour {
 
     private string text;
 
+    private void Update()
+    {
+        if(Globals.isTalkMode() && Input.GetKeyDown(KeyCode.Space))
+        {
+            Globals.advanceDialog = true;
+        }
+
+        if (Globals.advanceDialog)
+        {
+            if (Globals.hasRemainingDialog())
+            {
+                Globals.pendingDialog = setText(Globals.pendingDialog);
+            } else
+            {
+                Globals.requestNextDialog();
+            }
+            Globals.advanceDialog = false;
+        }
+    }
+
     public string setText(string t)
     {
         //Split string into lines

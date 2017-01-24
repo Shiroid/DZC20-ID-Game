@@ -25,40 +25,53 @@ public class NpcController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();
+        maxX += transform.position.x;
+        maxY += transform.position.y;
+        minX += transform.position.x;
+        minY += transform.position.y;
         ChooseDirection();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (isWalking)
+        if (Globals.isMoveMode())
         {
-            walkCounter -= Time.deltaTime;
-            rb2d.velocity = new Vector2(randomX*moveSpeed, randomY*moveSpeed);
-
-            if (walkCounter < 0)
+            if (isWalking)
             {
-                isWalking = false;
-                waitCounter = waitTime;
-            }
+                walkCounter -= Time.deltaTime;
 
-            if (transform.position.x >= maxX || transform.position.x <= minX)
-            {    
-                randomX = -randomX;
-            }
-            if (transform.position.y >= maxY || transform.position.y <= minY)
-            {              
-                randomY = -randomY;
-            }
-        }
-        else {
-            waitCounter -= Time.deltaTime;
+                if (walkCounter < 0)
+                {
+                    isWalking = false;
+                    waitCounter = waitTime;
+                }
 
-            rb2d.velocity = new Vector2(0, 0);
-
-            if (waitCounter < 0) {
-                ChooseDirection();
+                if (transform.position.x > maxX || transform.position.x < minX)
+                {
+                    if (transform.position.x > maxX) transform.Translate(new Vector3(maxX - transform.position.x, 0, 0));
+                    if (transform.position.x < minX) transform.Translate(new Vector3(minX - transform.position.x, 0, 0));
+                    randomX = -randomX;
+                }
+                if (transform.position.y > maxY || transform.position.y < minY)
+                {
+                    if (transform.position.y > maxY) transform.Translate(new Vector3(0, maxY - transform.position.y, 0));
+                    if (transform.position.y < minY) transform.Translate(new Vector3(0, minY - transform.position.y, 0));
+                    randomY = -randomY;
+                }
+                rb2d.velocity = new Vector2(randomX * moveSpeed, randomY * moveSpeed);
             }
+            else
+            {
+                waitCounter -= Time.deltaTime;
 
+                rb2d.velocity = new Vector2(0, 0);
+
+                if (waitCounter < 0)
+                {
+                    ChooseDirection();
+                }
+
+            }
         }
     }
 
