@@ -14,7 +14,7 @@ public class Globals {
     public static bool advanceDialog = false;
     public static bool requestDialog = false;
     public static Dialoguer currentDialog;
-    
+    public static int towerLock;
 
     public static void findItem(int itemIndex)
     {
