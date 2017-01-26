@@ -25,11 +25,13 @@ public class TrackSetter : Interactor {
         {
             Vector3 diff = transform.position - interactingPlayer.transform.position;
             diff.z = 0;
+            PlayerControllerDiag pcd = interactingPlayer.GetComponent<PlayerControllerDiag>();
+            pcd.SetPercSpeed(Mathf.Sign(diff.x)*diff.magnitude);
             interactingPlayer.transform.Translate(diff.normalized * Mathf.Min(speed * Time.deltaTime, diff.magnitude));
             if (diff.magnitude == 0)
             {
                 isMoving = false;
-                interactingPlayer.GetComponent<PlayerControllerDiag>().SetOnTrack(false);
+                pcd.SetOnTrack(false);
             }
         }
     }

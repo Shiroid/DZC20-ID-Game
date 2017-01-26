@@ -13,8 +13,19 @@ public class MenuPositioner : MonoBehaviour {
     private int numMenus = 3;
     private float round = 360;
 
+    private int lastMode = Globals.getMoveMode();
+
     // Update is called once per frame
     void Update() {
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            if (Globals.isPauseMode())
+                Globals.setMode(lastMode);
+            else Globals.setPauseMode();
+        }
+        currentMenu = Globals.getMode();
+
         float desiredRot = (((float)currentMenu) * round / numMenus);
         Vector3 angles = transform.localEulerAngles;
         float currentRot = angles.x;

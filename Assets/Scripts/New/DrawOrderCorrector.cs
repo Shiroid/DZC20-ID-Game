@@ -13,7 +13,7 @@ public class DrawOrderCorrector : MonoBehaviour {
             transform.position = new Vector3(
             transform.position.x,
             transform.position.y,
-            (transform.position.y + GetComponent<BoxCollider2D>().offset.y) / 1000);
+            (transform.position.y + GetComponent<BoxCollider2D>().offset.y) / 100);
         }
 	}
 }

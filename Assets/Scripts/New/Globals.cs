@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Globals {
 
+    public static int numDialogOptions = 4;
+
     private static int numItems = 9;
 
     private static bool[] items = new bool[numItems];
@@ -37,6 +39,7 @@ public class Globals {
     }
 
     public static int getMode() { return mode; }
+    public static void setMode(int m) { mode = m; }
     public static void setMoveMode() { mode = 0; }
     public static void setTalkMode() { mode = 2; }
     public static void setPauseMode() { mode = 1; }
@@ -74,5 +77,10 @@ public class Globals {
     {
         pendingDialog = "";
         requestDialog = true;
+    }
+
+    public static int getNumItems()
+    {
+        return numItems;
     }
 }

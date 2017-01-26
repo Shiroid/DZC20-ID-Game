@@ -1,15 +1,13 @@
 fileFormatVersion: 2
-guid: 2b347dc671c2a0143a93103fc12e9bfe
-timeCreated: 1485302844
+guid: d83b1b5d0a45a654083dcc402c42df49
+timeCreated: 1485466172
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: ShadyLaser
-    21300002: ShadyBeam
+  fileIDToRecycleName: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -29,20 +27,20 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 1
-    aniso: 16
+    filterMode: -1
+    aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 1500
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -60,43 +58,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: ShadyLaser
-      rect:
-        serializedVersion: 2
-        x: 1918
-        y: 3697
-        width: 565
-        height: 316
-      alignment: 9
-      pivot: {x: 0.098446794, y: 0.2292913}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ShadyBeam
-      rect:
-        serializedVersion: 2
-        x: 2959
-        y: 3929
-        width: 1112
-        height: 112
-      alignment: 9
-      pivot: {x: -0.00058312726, y: 0.07154628}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 

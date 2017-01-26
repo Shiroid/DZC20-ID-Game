@@ -7,6 +7,8 @@ public abstract class Interactor : MonoBehaviour {
     protected GameObject interactingPlayer;
     protected int canInteract;
 
+    public Interactor onSucceed;
+    public Interactor onFail;
     public bool isAssertive = false;
 
     void Start()
