@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 95911461052530460}
   - component: {fileID: 114280595427711836}
   - component: {fileID: 61629513397097966}
+  - component: {fileID: 58112203934270914}
   m_Layer: 0
   m_Name: Red NPC
   m_TagString: Untagged
@@ -228,9 +229,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1622981457513934}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.479, y: -0.18, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.479, y: -7.29, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4476471472602300}
   m_Father: {fileID: 0}
@@ -423,6 +424,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &58112203934270914
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1622981457513934}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.1, y: -0.7}
+  serializedVersion: 2
+  m_Radius: 0.7
 --- !u!61 &61629513397097966
 BoxCollider2D:
   m_ObjectHideFlags: 1

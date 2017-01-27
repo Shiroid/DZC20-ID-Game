@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 95444466010554410}
   - component: {fileID: 114168174876990292}
   - component: {fileID: 61013293570235978}
+  - component: {fileID: 58734357019820806}
   m_Layer: 0
   m_Name: Shady NPC Laser
   m_TagString: Untagged
@@ -270,9 +271,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1539939103076206}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.19, y: -1.19, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.96, y: -6.64, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4964392149967496}
   m_Father: {fileID: 0}
@@ -423,6 +424,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &58734357019820806
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1539939103076206}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.1, y: -0.3}
+  serializedVersion: 2
+  m_Radius: 0.7
 --- !u!61 &61013293570235978
 BoxCollider2D:
   m_ObjectHideFlags: 1

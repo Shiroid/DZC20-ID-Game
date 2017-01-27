@@ -9,7 +9,6 @@ public class DrawOrderCorrector : MonoBehaviour {
 	void Update () {
         if (GetComponent<BoxCollider2D>())
         {
-            Debug.Log(transform.position.z);
             transform.position = new Vector3(
             transform.position.x,
             transform.position.y,

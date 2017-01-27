@@ -55,6 +55,7 @@ public class Globals {
         pendingDialog = s;
         currentDialog = d;
         advanceDialog = true;
+        requestDialog = false;
         setTalkMode();
     }
     public static void endDialog()
@@ -62,6 +63,7 @@ public class Globals {
         pendingDialog = "";
         currentDialog = null;
         advanceDialog = false;
+        requestDialog = false;
         setMoveMode();
     }
     public static bool hasRemainingDialog()

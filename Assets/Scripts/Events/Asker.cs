@@ -12,7 +12,6 @@ public class Asker : Dialoguer
 
     public override void doInteraction()
     {
-        Globals.currentDialog = this;
         Globals.startDialog(pieces[currentPiece], this);
     }
 
@@ -35,6 +34,7 @@ public class Asker : Dialoguer
             if (Globals.requestDialog)
             {
                 Globals.endDialog();
+                if (deactivateOnEnd) gameObject.SetActive(false);
                 if (onEnd[currentPiece])
                 {
                     if (onEnd[currentPiece].isActiveAndEnabled) onEnd[currentPiece].doInteraction();

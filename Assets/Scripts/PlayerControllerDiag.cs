@@ -62,10 +62,14 @@ public class PlayerControllerDiag : MonoBehaviour {
 
             percSpeed = Mathf.Sign(rb2d.velocity.x) * rb2d.velocity.magnitude;
         }
-        if (!Globals.isMoveMode()) rb2d.velocity = new Vector2(0, 0);
+        if (!Globals.isMoveMode())
+        {
+            rb2d.velocity = new Vector2(0, 0);
+            percSpeed = 0;
+        }
 
         anim.SetFloat("Speed", Mathf.Abs(percSpeed));
-        if(rb2d.velocity.magnitude > 0.1)
+        if(Mathf.Abs(percSpeed) > 0.1)
             transform.localScale = new Vector3(
                 Mathf.Abs(transform.localScale.x) * Mathf.Sign(percSpeed), 
                 transform.localScale.y, transform.localScale.z);

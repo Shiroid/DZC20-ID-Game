@@ -24,6 +24,7 @@ public class TrackSetter : Interactor {
         if (isMoving && Globals.isMoveMode())
         {
             Vector3 diff = transform.position - interactingPlayer.transform.position;
+            diff -= new Vector3(interactingPlayer.GetComponent<BoxCollider2D>().offset.x, interactingPlayer.GetComponent<BoxCollider2D>().offset.y, 0);
             diff.z = 0;
             PlayerControllerDiag pcd = interactingPlayer.GetComponent<PlayerControllerDiag>();
             pcd.SetPercSpeed(Mathf.Sign(diff.x)*diff.magnitude);

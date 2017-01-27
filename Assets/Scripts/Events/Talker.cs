@@ -9,7 +9,6 @@ public class Talker : Dialoguer
 
     public override void doInteraction()
     {
-        Globals.currentDialog = this;
         Globals.startDialog(text, this);
     }
 
@@ -20,6 +19,7 @@ public class Talker : Dialoguer
             if (Globals.requestDialog)
             {
                 Globals.endDialog();
+                if (deactivateOnEnd) gameObject.SetActive(false);
                 if (onSucceed)
                 {
                     if (onSucceed.isActiveAndEnabled) onSucceed.doInteraction();
