@@ -6,6 +6,7 @@ public class NpcController : MonoBehaviour {
     public float moveSpeed;
 
     private Rigidbody2D rb2d;
+    private Animator anim;
 
     private bool isWalking;
 
@@ -23,7 +24,9 @@ public class NpcController : MonoBehaviour {
     private float randomY;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
+        anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         maxX += transform.position.x;
         maxY += transform.position.y;
@@ -72,6 +75,9 @@ public class NpcController : MonoBehaviour {
                 }
 
             }
+            anim.SetFloat("Speed", rb2d.velocity.magnitude);
+            transform.localScale = new Vector3(Mathf.Sign(Mathf.Sign(rb2d.velocity.x) * Mathf.Abs(transform.localScale.x)),
+                transform.localScale.y, transform.localScale.z);
         }
     }
 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class SceneSwapper : Interactor {
     
     public GameObject newPlayer;
+    public GameObject newFocus;
     public Camera mainCamera;
 
     override
@@ -12,7 +13,7 @@ public class SceneSwapper : Interactor {
     {
         interactingPlayer.SetActive(false);
         newPlayer.SetActive(true);
-        mainCamera.GetComponent<CameraController>().player = newPlayer;
+        mainCamera.GetComponent<CameraController>().player = newFocus?newFocus:newPlayer;
     }
 
     override

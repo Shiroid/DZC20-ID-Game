@@ -18,6 +18,9 @@ public class ScrollParallax : MonoBehaviour {
 	void LateUpdate () {
         Vector3 focusPos = cameraFocus.transform.position;
         if(distanceMultiplier > 1)
-            transform.position = (basePosition + focusPos*(distanceMultiplier-1))/distanceMultiplier;
+        {
+            Vector3 newPos = (basePosition + focusPos * (distanceMultiplier - 1)) / distanceMultiplier;
+            transform.position = new Vector3(newPos.x, newPos.y, basePosition.z);
+        }
 	}
 }

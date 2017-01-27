@@ -24,12 +24,15 @@ public class TrackSetter : Interactor {
         if (isMoving && Globals.isMoveMode())
         {
             Vector3 diff = transform.position - interactingPlayer.transform.position;
+            diff -= new Vector3(interactingPlayer.GetComponent<BoxCollider2D>().offset.x, interactingPlayer.GetComponent<BoxCollider2D>().offset.y, 0);
             diff.z = 0;
+            PlayerControllerDiag pcd = interactingPlayer.GetComponent<PlayerControllerDiag>();
+            pcd.SetPercSpeed(Mathf.Sign(diff.x)*diff.magnitude);
             interactingPlayer.transform.Translate(diff.normalized * Mathf.Min(speed * Time.deltaTime, diff.magnitude));
             if (diff.magnitude == 0)
             {
                 isMoving = false;
-                interactingPlayer.GetComponent<PlayerControllerDiag>().SetOnTrack(false);
+                pcd.SetOnTrack(false);
             }
         }
     }

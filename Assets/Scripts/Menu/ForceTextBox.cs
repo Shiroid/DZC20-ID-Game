@@ -32,7 +32,7 @@ public class ForceTextBox : MonoBehaviour {
     public string setText(string t)
     {
         //Split string into lines
-        string[] lines = t.Split(new[] { '\r', '\n' });
+        string[] lines = t.Split(new[] { '\r', '\n', '_' });
         //Split lines into words
         string[][] words = new string[lines.Length][];
         //Assign words to 2D array

@@ -9,11 +9,10 @@ public class DrawOrderCorrector : MonoBehaviour {
 	void Update () {
         if (GetComponent<BoxCollider2D>())
         {
-            Debug.Log(transform.position.z);
             transform.position = new Vector3(
             transform.position.x,
             transform.position.y,
-            (transform.position.y + GetComponent<BoxCollider2D>().offset.y) / 1000);
+            (transform.position.y + GetComponent<BoxCollider2D>().offset.y) / 100);
         }
 	}
 }
