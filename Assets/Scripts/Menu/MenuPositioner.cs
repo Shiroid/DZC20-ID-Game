@@ -22,7 +22,11 @@ public class MenuPositioner : MonoBehaviour {
         {
             if (Globals.isPauseMode())
                 Globals.setMode(lastMode);
-            else Globals.setPauseMode();
+            else
+            {
+                lastMode = Globals.getMode();
+                Globals.setPauseMode();
+            }
         }
         currentMenu = Globals.getMode();
 

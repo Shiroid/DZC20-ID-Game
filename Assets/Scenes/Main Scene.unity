@@ -1847,7 +1847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46c94f53c93f9d3439d0eb3920a3ea8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentMenu: 0
+  currentMenu: 2
   turnSpeed: 180
 --- !u!4 &1450667319
 Transform:
@@ -1998,7 +1998,7 @@ TextMesh:
   m_FontSize: 30
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 3fcdf1a8ced037446854e3ffd07d32f5, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
@@ -2016,7 +2016,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3fcdf1a8ced037446854e3ffd07d32f5, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

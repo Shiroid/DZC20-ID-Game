@@ -17,6 +17,7 @@ public class Globals {
     public static bool requestDialog = false;
     public static Dialoguer currentDialog;
     public static int towerLock;
+    public static string arduinoPort;
 
     public static void findItem(int itemIndex)
     {
