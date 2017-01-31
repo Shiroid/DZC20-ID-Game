@@ -6,7 +6,7 @@ public class Globals {
 
     public static int numDialogOptions = 4;
 
-    private static int numItems = 9;
+    private static int numItems = 18;
 
     private static bool[] items = new bool[numItems];
 
@@ -18,6 +18,7 @@ public class Globals {
     public static Dialoguer currentDialog;
     public static int towerLock;
     public static string arduinoPort;
+    public static int assertionDelay;
 
     public static void findItem(int itemIndex)
     {
@@ -85,5 +86,10 @@ public class Globals {
     public static int getNumItems()
     {
         return numItems;
+    }
+
+    public static void DelayAssertion()
+    {
+        assertionDelay = 2;
     }
 }

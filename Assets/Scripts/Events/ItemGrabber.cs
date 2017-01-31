@@ -7,10 +7,10 @@ public class ItemGrabber : Interactor {
 
     public int item;
 
-    public override void doInteraction()
+    public override void doInteraction(GameObject intPlayer)
     {
         Globals.findItem(item);
-        if (onSucceed) onSucceed.doInteraction();
+        if (onSucceed) onSucceed.doInteraction(interactingPlayer);
     }
 
     public override void doPassive()

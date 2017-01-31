@@ -8,4 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Level.unity
   - enabled: 1
+    path: Assets/Scenes/Intro.unity
+  - enabled: 1
     path: Assets/Scenes/Main Scene.unity
+  - enabled: 1
+    path: Assets/Scenes/Break In.unity
+  - enabled: 1
+    path: Assets/Scenes/Sketch.unity
+  - enabled: 1
+    path: Assets/Scenes/Reflection.unity

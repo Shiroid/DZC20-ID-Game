@@ -7,7 +7,7 @@ public class Talker : Dialoguer
 {
     public string text;
 
-    public override void doInteraction()
+    public override void doInteraction(GameObject intPlayer)
     {
         Globals.startDialog(text, this);
     }
@@ -22,8 +22,8 @@ public class Talker : Dialoguer
                 if (deactivateOnEnd) gameObject.SetActive(false);
                 if (onSucceed)
                 {
-                    if (onSucceed.isActiveAndEnabled) onSucceed.doInteraction();
-                    else if (onFail) onFail.doInteraction();
+                    if (onSucceed.isActiveAndEnabled) onSucceed.doInteraction(interactingPlayer);
+                    else if (onFail) onFail.doInteraction(interactingPlayer);
                 }
             }
         }

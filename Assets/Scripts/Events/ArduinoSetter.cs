@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class ArduinoSetter : Interactor
 {
-    string port; 
-    public override void doInteraction()
+    public string port; 
+    public override void doInteraction(GameObject intPlayer)
     {
         Globals.arduinoPort = port;
     }

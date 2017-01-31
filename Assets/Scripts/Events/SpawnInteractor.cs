@@ -11,7 +11,7 @@ public class SpawnInteractor : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             gameObject.SetActive(false);
-            interactor.doInteraction();
+            interactor.doInteraction(collision.gameObject);
         }
     }
 }

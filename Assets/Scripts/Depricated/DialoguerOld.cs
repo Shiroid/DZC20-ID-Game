@@ -16,7 +16,7 @@ public class DialoguerOld : Interactor
     public int[] pieceOnDown;
     public Interactor[] onEnd;
 
-    public override void doInteraction()
+    public override void doInteraction(GameObject intPlayer)
     {
         currentDialogue = 0;
         //Globals.currentDialog = this;
@@ -52,8 +52,8 @@ public class DialoguerOld : Interactor
                     Globals.endDialog();
                     if (onEnd[last])
                     {
-                        if (onEnd[last].isActiveAndEnabled) onEnd[last].doInteraction();
-                        else if (onFail) onFail.doInteraction();
+                        if (onEnd[last].isActiveAndEnabled) onEnd[last].doInteraction(interactingPlayer);
+                        else if (onFail) onFail.doInteraction(interactingPlayer);
                     }
                 }
             }

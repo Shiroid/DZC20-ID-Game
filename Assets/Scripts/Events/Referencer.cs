@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Referencer : Interactor {
-    public override void doInteraction()
+    public override void doInteraction(GameObject intPlayer)
     {
-        onSucceed.doInteraction();
+        onSucceed.doInteraction(interactingPlayer);
     }
 
     public override void doPassive()

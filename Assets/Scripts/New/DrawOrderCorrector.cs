@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent (typeof(BoxCollider2D))]
+
 public class DrawOrderCorrector : MonoBehaviour {
     //Requires the object to have a box collider
 	
@@ -12,7 +14,7 @@ public class DrawOrderCorrector : MonoBehaviour {
             transform.position = new Vector3(
             transform.position.x,
             transform.position.y,
-            (transform.position.y + GetComponent<BoxCollider2D>().offset.y) / 100);
+            (transform.position.y + GetComponent<BoxCollider2D>().offset.y*transform.lossyScale.y) / 100);
         }
 	}
 }

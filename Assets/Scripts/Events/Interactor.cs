@@ -18,9 +18,9 @@ public abstract class Interactor : MonoBehaviour {
 
     void Update()
     {
-        if (canInteract > 0 && Input.GetKeyDown("space") && Globals.isMoveMode())
+        if (canInteract > 0 && Input.GetKeyDown("space") && Globals.isMoveMode() && !isAssertive)
         {
-            doInteraction();
+            doInteraction(interactingPlayer);
         }
         doPassive();
         if (canInteract > 0)
@@ -38,12 +38,14 @@ public abstract class Interactor : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player") && isAssertive)
+        if (other.gameObject.CompareTag("Player") && isAssertive && Globals.assertionDelay == 0)
         {
-            doInteraction();
+            Globals.assertionDelay = 2;
+            interactingPlayer = other.gameObject;
+            doInteraction(interactingPlayer);
         }
     }
 
-    abstract public void doInteraction();
+    abstract public void doInteraction(GameObject intPlayer);
     abstract public void doPassive();
 }

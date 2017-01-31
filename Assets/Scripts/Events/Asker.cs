@@ -10,7 +10,7 @@ public class Asker : Dialoguer
     public string[] pieces = new string[Globals.numDialogOptions];
     public Interactor[] onEnd = new Interactor[Globals.numDialogOptions];
 
-    public override void doInteraction()
+    public override void doInteraction(GameObject intPlayer)
     {
         Globals.startDialog(pieces[currentPiece], this);
     }
@@ -37,8 +37,8 @@ public class Asker : Dialoguer
                 if (deactivateOnEnd) gameObject.SetActive(false);
                 if (onEnd[currentPiece])
                 {
-                    if (onEnd[currentPiece].isActiveAndEnabled) onEnd[currentPiece].doInteraction();
-                    else if (onFail) onFail.doInteraction();
+                    if (onEnd[currentPiece].isActiveAndEnabled) onEnd[currentPiece].doInteraction(interactingPlayer);
+                    else if (onFail) onFail.doInteraction(interactingPlayer);
                 }
             }
         }

@@ -5,29 +5,34 @@ using System.IO.Ports;
 
 //Arduino communication class, if the arduino fails to connect, it defaults to number keys as input instead.
 public class Arduino : MonoBehaviour {
-
-    public string port;
+    
     private bool useArduino = true;
 
     private SerialPort sp;
 	// Use this for initialization
 	void Start () {
 
-        try
-        {
-            sp = new SerialPort(port, 9600);
-            sp.Open();
-            sp.ReadTimeout = 1;
-        } catch(System.Exception e)
-        {
-            useArduino = false;
-        }
-		
+        useArduino = false;
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
+        if (Globals.arduinoPort != "" && useArduino == false)
+        {
+            try
+            {
+                sp = new SerialPort(Globals.arduinoPort, 9600);
+                sp.Open();
+                sp.ReadTimeout = 1;
+                useArduino = true;
+            }
+            catch (System.Exception e)
+            {
+                useArduino = false;
+                Globals.arduinoPort = "";
+            }
+        }
         if (useArduino)
         {
             if (sp.IsOpen)

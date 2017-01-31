@@ -8,24 +8,25 @@ public class FlexDialoguer : Dialoguer
     public Interactor onDown;
     public Interactor onUp;
     public string text;
-    public Interactor onEnd;
 
-    public override void doInteraction()
+    public override void doInteraction(GameObject intPlayer)
     {
         Globals.startDialog(text, this);
     }
 
     public override void doPassive()
     {
-        if (Globals.currentDialog == this && Globals.isTalkMode())
+        if (Globals.currentDialog == this && Globals.isTalkMode() && Globals.assertionDelay == 0)
         {
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                if(onDown) onDown.doInteraction();
+                Globals.DelayAssertion();
+                if (onDown) onDown.doInteraction(interactingPlayer);
             }
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                if(onUp) onUp.doInteraction();
+                Globals.DelayAssertion();
+                if (onUp) onUp.doInteraction(interactingPlayer);
             }
             if (Globals.requestDialog)
             {
@@ -33,8 +34,8 @@ public class FlexDialoguer : Dialoguer
                 if (deactivateOnEnd) gameObject.SetActive(false);
                 if (onSucceed)
                 {
-                    if (onSucceed.isActiveAndEnabled) onSucceed.doInteraction();
-                    else if (onFail) onFail.doInteraction();
+                    if (onSucceed.isActiveAndEnabled) onSucceed.doInteraction(interactingPlayer);
+                    else if (onFail) onFail.doInteraction(interactingPlayer);
                 }
             }
         }

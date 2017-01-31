@@ -10,10 +10,14 @@ public class TrackSetter : Interactor {
 
     public float speed = 5f;
 
+    public GameObject trackEnd;
+
     override
-    public void doInteraction()
+    public void doInteraction(GameObject intPlayer)
     {
+        interactingPlayer = intPlayer;
         isMoving = true;
+        if(trackEnd) trackEnd.SetActive(false);
         interactingPlayer.GetComponent<PlayerControllerDiag>().SetOnTrack(true);
     }
     
@@ -24,15 +28,19 @@ public class TrackSetter : Interactor {
         if (isMoving && Globals.isMoveMode())
         {
             Vector3 diff = transform.position - interactingPlayer.transform.position;
-            diff -= new Vector3(interactingPlayer.GetComponent<BoxCollider2D>().offset.x, interactingPlayer.GetComponent<BoxCollider2D>().offset.y, 0);
+            diff -= new Vector3(
+                interactingPlayer.GetComponent<BoxCollider2D>().offset.x * interactingPlayer.transform.lossyScale.x, 
+                interactingPlayer.GetComponent<BoxCollider2D>().offset.y * interactingPlayer.transform.lossyScale.y, 0);
             diff.z = 0;
             PlayerControllerDiag pcd = interactingPlayer.GetComponent<PlayerControllerDiag>();
             pcd.SetPercSpeed(Mathf.Sign(diff.x)*diff.magnitude);
             interactingPlayer.transform.Translate(diff.normalized * Mathf.Min(speed * Time.deltaTime, diff.magnitude));
-            if (diff.magnitude == 0)
+            if (diff.magnitude < 0.001)
             {
+                if(trackEnd) trackEnd.SetActive(true);
                 isMoving = false;
                 pcd.SetOnTrack(false);
+                if (onSucceed) onSucceed.doInteraction(interactingPlayer);
             }
         }
     }
