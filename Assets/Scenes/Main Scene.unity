@@ -7901,7 +7901,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0.13751984, y: 0.05501175}
   serializedVersion: 2
@@ -20506,9 +20506,9 @@ MonoBehaviour:
   onFail: {fileID: 0}
   isAssertive: 0
   deactivateOnEnd: 1
-  text: Press Space to interact_This game is yet to beUse the arrow keys to navigate._Use
-    space to interact and return/enter to open your inventory._Please play this version
-    of the game with supervision, it is barely populated.
+  text: Press Space to interact_Use the arrow keys to navigate._Use space to interact
+    and return/enter to open your inventory._Please play this version of the game
+    with supervision, it is barely populated.
 --- !u!1 &1996725924
 GameObject:
   m_ObjectHideFlags: 0
